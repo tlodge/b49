@@ -13,8 +13,7 @@
     <![endif]-->
   </head>
   <body<?php print phptemplate_body_class($left, $right); ?>>
-
-<!-- Layout -->
+  <!-- Layout -->
   <div id="header-region" class="clear-block"><?php print $header; ?></div>
 
     <div id="wrapper">
@@ -55,7 +54,22 @@
         <?php endif; ?>
 
       </div> <!-- /header -->
-
+	
+	 <div id="tray">
+        <ul class="box">
+            <li id="tray-active"><a href="#">Homepage</a></li> <!-- Active page -->
+            <li><a href="#">Category</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">Category</a></li>
+        </ul>
+    	<hr class="noscreen" />
+    </div> <!-- /tray -->
+    
       <?php if ($left): ?>
         <div id="sidebar-left" class="sidebar">
           <?php if ($search_box): ?><div class="block block-theme"><?php print $search_box ?></div><?php endif; ?>
