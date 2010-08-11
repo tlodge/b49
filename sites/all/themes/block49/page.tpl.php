@@ -80,10 +80,14 @@
       </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
 
       <?php if ($right): ?>
+        
         <div id="sidebar-right" class="sidebar">
+        	<div id="aside-top"></div>
           <?php if (!$left && $search_box): ?><div class="block block-theme"><?php print $search_box ?></div><?php endif; ?>
           <?php print $right ?>
+           <div id="aside-bottom"></div>
         </div>
+       
       <?php endif; ?>
 
     </div> <!-- /container -->

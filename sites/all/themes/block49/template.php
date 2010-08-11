@@ -52,7 +52,7 @@ function phptemplate_preprocess_page(&$vars) {
 /**
  * Add a "Comments" heading above comments except on forum pages.
  */
-function garland_preprocess_comment_wrapper(&$vars) {
+function block49_preprocess_comment_wrapper(&$vars) {
   if ($vars['content'] && $vars['node']->type != 'forum') {
     $vars['content'] = '<h2 class="comments">'. t('Comments') .'</h2>'.  $vars['content'];
   }
