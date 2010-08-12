@@ -1,0 +1,104 @@
+body {
+    background-color: #dfdfdf;
+    color: #000
+}
+
+a {
+    color: #990033;
+}
+
+a:hover {
+    color: #80002B;
+}
+
+h3.title {
+    border-bottom: 1px solid #DFDFDF;
+    color: #000;
+}
+
+body {
+    background: url("images/bg.gif") 50% 0 repeat-y;
+    font: 0.8em / 1.5 "arial", sans-serif;
+}
+
+a {
+    color: #00F;
+}
+
+a:hover {
+    color: #F00;
+}
+
+h1, h2, h3, h4, h5, h6, p, address, blockquote, table, dl, fieldset {
+    margin: 15px 0;
+}
+
+h3 {
+    font-size: 140%;
+}
+
+.box {
+    margin-bottom: 2.5em;
+}
+
+.noscreen {
+    display: none;
+}
+
+.box {
+    min-height: 1px;
+}
+
+.box:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    line-height: 0;
+    font-size: 0;
+    content: ".";
+}
+
+#tray {
+    background-color: #2F2F2F;
+    color: #FFFFFF;
+}
+
+#tray li#tray-active a {
+    color: #ffccde;
+}
+
+#tray {
+    padding: 10px 0 15px 10px;
+    background: #2F2F2F url("images/tray.gif") 0 100% no-repeat;
+}
+
+#tray ul {
+    margin: 0;
+    list-style: none;
+}
+
+#tray ul li {
+    display: inline;
+}
+
+#tray ul li a {
+    display: block;
+    float: left;
+    padding: 0 15px 0 10px;
+    background: url("images/tray-separator.gif") 100% 50% no-repeat;
+    text-decoration: underline;
+}
+
+#tray ul li a:hover {
+    text-decoration: none;
+}
+
+#tray ul li#tray-active a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#header {
+    background-color: #990033;
+    color: #FFF;
+}
