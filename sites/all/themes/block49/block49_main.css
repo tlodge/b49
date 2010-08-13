@@ -166,18 +166,137 @@ h3 {font-size:140%;}
  	display:block;
 	padding:7px 10px 7px 30px;
  }
+ 
+ 
  .content ul.menu{
  	list-style:none outside none;
  	display:block;
-	/*padding:7px 10px 7px 30px;*/
  }
- .content ul.menu li.leaf a.active{
+ 
+ 
+ /*
+.content ul.menu li.collapsed a{
+	background:url("block49_images/nav-link.gif") no-repeat scroll 15px 13px transparent;
+	background-color:#D0D0D0 !important;
+	color:#000000 !important;
+	display:block;
+	border-top:1px solid #E5E5E5;
+}
+*/
+
+/*
+.content ul.menu li {
+margin:0 0 0 0;
+}
+*/
+/*
+li.collapsed, li.leaf {
+margin: 0px;
+}
+*/
+/*
+li.leaf a{
+	background-color:#D0D0D0 !important;
+	color:#000000 !important;
+	display:block;
+	border-top:1px solid #E5E5E5;
+}
+*/
+/*
+li.collapsed a{
+	background:url("block49_images/nav-link.gif") no-repeat scroll 15px 13px transparent;
+	background-color:#D0D0D0 !important;
+	color:#000000 !important;
+	display:block;
+	border-top:1px solid #E5E5E5;
+}
+*/
+/*
+li.active-trail a {
+	background:url("block49_images/nav-active.gif") no-repeat scroll 15px 13px transparent;
 	background-color:#990033 !important;
 	color:#FFFFFF !important;
- 	background:url("block49_images/nav-active.gif") no-repeat scroll 15px 13px transparent;
 	font-weight:bold;
 	text-decoration:none;
- }
+	
+}
+*/
+/*
+li.expanded ul.menu li.expanded a{
+	background-color:#D0D0D0 !important;
+	color:#000000 !important;
+	display:block;
+	border-top:1px solid #E5E5E5;
+}
+*/
+/*
+li.expanded .leaf a{
+	background-color:#2F2F2F !important;
+	border-top:1px solid #525252;
+	color:#FFCCDE !important;
+	background:url("block49_images/nav-sub.gif") no-repeat scroll 30px 10px transparent;
+	padding-left:45px;
+	text-decoration:none;
+}
+*/
+
+/*
+ * level 1 - first expanded item 
+ */
+
+
+
+
+
+/*
+ * The following handles the menu incremental padding
+ */
+
+ul.menu li a{
+	padding-left:30px;
+}
+
+ul.menu li ul.menu li a{
+	padding-left:50px;
+}
+
+ul.menu li ul.menu li.collapsed a{
+	background:url("block49_images/nav-link.gif") no-repeat scroll 35px 13px transparent;
+}
+
+li.collapsed a{
+	background:url("block49_images/nav-link.gif") no-repeat scroll 15px 13px transparent;
+}
+/*
+ * Level 3
+ */
+ul.menu li ul.menu li ul.menu li a{
+	padding-left:70px;	
+}
+
+ul.menu li ul.menu li ul.menu li.collapsed a{
+	background:url("block49_images/nav-link.gif") no-repeat scroll 55px 13px transparent;
+}
+/*
+ * level 4 - most -  (expanded) menu item
+ */
+ul.menu li ul.menu li ul.menu li ul.menu li a{
+	padding-left:90px;
+}
+
+ul.menu li ul.menu li ul.menu li ul.menu li.collapsed a{
+	background:url("block49_images/nav-link.gif") no-repeat scroll 75px 13px transparent;
+}
+
+
+li.collapsed, li.leaf, li.expanded{
+ padding:0px;
+	
+}
+
+
+
+
 
  .content ul.menu li{
  	display:inline;

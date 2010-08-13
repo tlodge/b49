@@ -230,26 +230,7 @@
             <div class="padding">
                 <h4 class="nom">Categories:</h4>
             </div> <!-- /padding -->
-            <?php print $left?>
-            <ul class="nav">
-                <li id="nav-active"><a href="#">Active category</a> <!-- Active -->
-                    <ul>
-                        <li><a href="#">Subcategory</a></li>
-                        <li><a href="#">Subcategory</a></li>
-                        <li><a href="#">Subcategory</a></li>
-                        <li><a href="#">Subcategory</a></li>
-                        <li><a href="#">Subcategory</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Some category</a></li>
-                <li><a href="#">Some category</a></li>
-                <li><a href="#">Some category</a></li>
-                <li><a href="#">Some category</a></li>
-                <li><a href="#">Some category</a></li>
-                <li><a href="#">Some category</a></li>
-                <li><a href="#">Some category</a></li>
-            </ul>
-                
+            <?php print $left?>    
             <!-- RSS feeds -->
             <div class="padding">
 
