@@ -240,9 +240,8 @@ li.expanded .leaf a{
 }
 */
 
-/*
- * level 1 - first expanded item 
- */
+
+
 
 
 
@@ -252,13 +251,30 @@ li.expanded .leaf a{
  * The following handles the menu incremental padding
  */
 
+/*
+ * level 1 - first expanded item 
+ */
+
 ul.menu li a{
 	padding-left:30px;
+}
+
+ul.menu li a.active{ 
+	background:url("block49_images/nav-active.gif") no-repeat scroll 15px 13px transparent;
+	background-color:#990033 !important;
+	color:#FFFFFF !important;
+	font-weight:bold;
+	text-decoration:none;
+	
 }
 
 ul.menu li ul.menu li a{
 	padding-left:50px;
 }
+
+/*
+ * level 2
+ */
 
 ul.menu li ul.menu li.collapsed a{
 	background:url("block49_images/nav-link.gif") no-repeat scroll 35px 13px transparent;
@@ -268,7 +284,7 @@ li.collapsed a{
 	background:url("block49_images/nav-link.gif") no-repeat scroll 15px 13px transparent;
 }
 /*
- * Level 3
+ * level 3
  */
 ul.menu li ul.menu li ul.menu li a{
 	padding-left:70px;	
@@ -291,12 +307,7 @@ ul.menu li ul.menu li ul.menu li ul.menu li.collapsed a{
 
 li.collapsed, li.leaf, li.expanded{
  padding:0px;
-	
 }
-
-
-
-
 
  .content ul.menu li{
  	display:inline;
