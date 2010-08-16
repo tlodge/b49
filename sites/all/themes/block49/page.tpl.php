@@ -14,7 +14,7 @@
    
 </head>
 
-<body> 
+<body<?php print phptemplate_body_class($left, $right); ?>>
 
 <div id="main">
 
@@ -30,23 +30,15 @@
     <div id="tray">
         <ul class="box">
         	 <?php if (isset($primary_links)) : ?>
+        	 		
           			<?php print theme('links', $primary_links, array('class' => 'links primary-links')) ?>
         	<?php endif; ?>
-            <!--  <li id="tray-active"><a href="#">Homepage</a></li> 
-            <li><a href="#">Category</a></li>
-            <li><a href="#">Category</a></li>
-            <li><a href="#">Category</a></li>
-            <li><a href="#">Category</a></li>
-            <li><a href="#">Category</a></li>
-            <li><a href="#">Category</a></li>
-            <li><a href="#">Category</a></li>
-            <li><a href="#">Category</a></li>-->
         </ul>
     	<hr class="noscreen" />
     </div> <!-- /tray -->
 
     <!-- Columns -->
-    <div id="cols" class="box">
+   <div id="cols" class="box">
 
         <!-- Content -->
         <div id="content">
@@ -85,135 +77,24 @@
                 <hr class="noscreen" />
 
                 <div id="content-left-in">
+               		<?php if ($tabs): print '<ul class="tabs primary">'. $tabs .'</ul>'; endif; ?>
+          			<?php if ($tabs2): print '<ul class="tabs secondary">'. $tabs2 .'</ul>'; endif; ?>
 					<?php print $content?>
-                    <!-- Recent Articles -->
-                    <h3 class="title">Recent articles</h3>
-
-                    <!-- Article -->
-                    <div class="article box">
-                        <div class="article-img">
-                            <img src="/sites/all/themes/block49/tmp/180x135.gif" width="180" height="135" alt="" />
-                        </div> <!-- /article-img -->
-                        <div class="article-desc">
-                            <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
-                            <p class="info">Published: <strong>16.7.2008</strong> by: <strong><a href="#">John Doe</a></strong></p>
-                            <p class="nomb">Lorem ipsum dolor sitae amet, consectetuer ad. Duisa eros. Nunc imperdiet, lacus quias posule accumsan, elita nunc eleifend augue id uipera enim augue id eros. Etiam justo.</p>
-                        </div>
-                    </div> <!-- /article -->
-
-                    <!-- Article -->
-                    <div class="article box">
-                        <div class="article-img">
-                            <img src="/sites/all/themes/block49/tmp/180x135.gif" width="180" height="135" alt="" />
-                        </div> <!-- /article-img -->
-                        <div class="article-desc">
-                            <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
-                            <p class="info">Published: <strong>16.7.2008</strong> by: <strong><a href="#">John Doe</a></strong></p>
-                            <p class="nomb">Lorem ipsum dolor sitae amet, consectetuer ad. Duisa eros. Nunc imperdiet, lacus quias posule accumsan, elita nunc eleifend augue id uipera enim augue id eros. Etiam justo.</p>
-                        </div>
-                    </div> <!-- /article -->
-
-                    <!-- Article -->
-                    <div class="article box">
-                        <div class="article-img">
-                            <img src="/sites/all/themes/block49/tmp/180x135.gif" width="180" height="135" alt="" />
-                        </div> <!-- /article-img -->
-                        <div class="article-desc">
-                            <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
-                            <p class="info">Published: <strong>16.7.2008</strong> by: <strong><a href="#">John Doe</a></strong></p>
-                            <p class="nomb">Lorem ipsum dolor sitae amet, consectetuer ad. Duisa eros. Nunc imperdiet, lacus quias posule accumsan, elita nunc eleifend augue id uipera enim augue id eros. Etiam justo.</p>
-                        </div>
-                    </div> <!-- /article -->
-
-                    <!-- Article -->
-                    <div class="article box">
-                        <div class="article-img">
-                            <img src="/sites/all/themes/block49/tmp/180x135.gif" width="180" height="135" alt="" />
-                        </div> <!-- /article-img -->
-                        <div class="article-desc">
-                            <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
-                            <p class="info">Published: <strong>16.7.2008</strong> by: <strong><a href="#">John Doe</a></strong></p>
-                            <p class="nomb">Lorem ipsum dolor sitae amet, consectetuer ad. Duisa eros. Nunc imperdiet, lacus quias posule accumsan, elita nunc eleifend augue id uipera enim augue id eros. Etiam justo.</p>
-                        </div>
-                    </div> <!-- /article -->
-
-                    <p class="t-right"><a href="#" class="more">Older articles</a></p>
-
                 </div> <!-- /content-left-in -->
 
             </div> <!-- /content-left -->
 
             <hr class="noscreen" />
 
+			<?php  if ($right): ?>
             <div id="content-right">
 				
-                <!-- Ads 125x125 -->
-                <?php if($ads):?>
-                <div class="box">
-                	<?php print $ads?>
-                    <span class="f-right"><a href="#"><img src="/sites/all/themes/block49/tmp/125x125.gif" width="125" height="125" alt="" /></a></span>
-                    <span class="f-left"><a href="#"><img src="/sites/all/themes/block49/tmp/125x125.gif" width="125" height="125" alt="" /></a></span>
-                </div>
-                <?php endif; ?>
+                <!-- Ads 125x125 --> 
                 <!-- News -->
-                <?php  if ($right): ?>
-       			<?php print $right?>
-                <div class="box-01-top"></div>
-                <div class="box-01-top-b box">
-                    <span class="f-right">Updated: 15.7.2008 @ 15:34</span>
-                    <span class="f-left"><strong>News</strong></span>
-                </div> <!-- /box-01-top-b -->
-                <div class="box-01">
                 
-                    <dl class="news box">
-                        <dt>SEP<br /><span>23</span></dt>
-                        <dd><span>@ 15:34</span><br />Lorem ipsum dolor sit, consectetuer ad. Duisa eros. Nunc imperdiet, lacus quas posule accumsan, elita nunc eleifendel augue id uipera enim augue id eros.</dd>
-                    </dl>
-
-                    <div class="bg">
-                        <dl class="news box">
-                            <dt>SEP<br /><span>23</span></dt>
-                            <dd><span>@ 15:34</span><br />Lorem ipsum dolor sit, consectetuer ad. Duisa eros. Nunc imperdiet, lacus quas posule accumsan, elita nunc eleifendel augue id uipera enim augue id eros.</dd>
-                        </dl>
-                    </div> <!-- /bg -->
-
-                    <dl class="news box">
-                        <dt>SEP<br /><span>23</span></dt>
-                        <dd><span>@ 15:34</span><br />Lorem ipsum dolor sit, consectetuer ad. Duisa eros. Nunc imperdiet, lacus quas posule accumsan, elita nunc eleifendel augue id uipera enim augue id eros.</dd>
-                    </dl>
-
-                    <div class="bg">
-                        <dl class="news box">
-                            <dt>SEP<br /><span>23</span></dt>
-                            <dd><span>@ 15:34</span><br />Lorem ipsum dolor sit, consectetuer ad. Duisa eros. Nunc imperdiet, lacus quas posule accumsan, elita nunc eleifendel augue id uipera enim augue id eros.</dd>
-                        </dl>
-                    </div> <!-- /bg -->
-
-                    <dl class="news box">
-                        <dt>SEP<br /><span>23</span></dt>
-                        <dd><span>@ 15:34</span><br />Lorem ipsum dolor sit, consectetuer ad. Duisa eros. Nunc imperdiet, lacus quas posule accumsan, elita nunc eleifendel augue id uipera enim augue id eros.</dd>
-                    </dl>
-                    
-                </div> <!-- /box-01 -->
-                <div class="box-01-bottom"></div>
-
-                <!-- Most readed articles -->
-                <div class="box-02-top"></div>
-                <div class="box-02-top-b box">
-                    <span class="f-left"><strong>Most readed articles</strong></span>
-                </div> <!-- /box-02-top-b -->
-                <div class="box-02 box">
-
-                    <ul class="mostreaded">
-                        <li><span class="f-right">1925&times</span><a href="#">Lomem ipsum dolor sit amet</a></li>
-                        <li><span class="f-right">1925&times</span><a href="#">Lomem ipsum dolor sit amet</a></li>
-                        <li><span class="f-right">1925&times</span><a href="#">Lomem ipsum dolor sit amet</a></li>
-                        <li><span class="f-right">1925&times</span><a href="#">Lomem ipsum dolor sit amet</a></li>
-                        <li><span class="f-right">1925&times</span><a href="#">Lomem ipsum dolor sit amet</a></li>
-                    </ul>
-
-                </div> <!-- /box-02 -->
-                <div class="box-02-bottom"></div>
+       			<?php print $right?>
+               
+                
 
             </div> <!-- /content-right -->
 			<?php endif;?>
@@ -221,42 +102,14 @@
         </div> <!-- /content -->
 
 		<?php if ($left):?>
-        <!-- Aside -->
-        <div id="aside">
-
+        	<div id="aside">
             <div id="aside-top"></div>
-            
-            <!-- Categories -->
-            <div class="padding">
-                <h4 class="nom">Categories:</h4>
-            </div> <!-- /padding -->
-            <?php print $left?>    
-            <!-- RSS feeds -->
-            <div class="padding">
-
-                <h4 class="margin">RSS feeds:</h4>
-                
-                <p class="nom">
-                    <a href="#" class="rss">Articles</a><br />
-                    <a href="#" class="rss">Comments</a>
-                </p>
-                
-                <h4 class="margin">Search:</h4>
-
-                <form action="#" method="get">
-                    <div id="search" class="box">
-                        <input type="text" size="20" id="search-input" /><input type="submit" id="search-submit" value="Search" />
-                    </div> <!-- /search -->
-                </form>
-
-            </div> <!-- /padding -->
-            
-        <hr class="noscreen" />          
-        </div> <!-- /aside -->
-        
+            	<?php print $left?>     
+        	<hr class="noscreen" />          
+        	</div> <!-- /aside -->
         <div id="aside-bottom"></div>
     	<?php endif;?>
-    </div> <!-- /cols -->
+    </div>  
 
 	<?php if ($footer):?>
     <!-- Footer -->
