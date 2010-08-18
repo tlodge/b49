@@ -20,8 +20,13 @@
 
     <!-- Header -->
     <div id="header">
-		
-        <h1 id="logo"><a href="./" title="[Go to homepage]"><span></span>FutureMag</a></h1>
+		<?php 
+		  if ($site_name) {
+            $site_fields[] = check_plain($site_name);
+          }
+          $site_title = implode(' ', $site_fields);
+        ?> 
+        <h1 id="logo"><a href="./" title="[Go to homepage]"><span></span><?php print $site_title?></a></h1>
         <hr class="noscreen" />          
 
     </div> <!-- /header -->
@@ -46,22 +51,9 @@
             <div id="content-left">
 				
 				<?php if ($topstory): ?>
-                <!-- Topstory -->
-                <div id="topstory-top"></div>
-                <div id="topstory" class="box">
-                	<?php print $topstory ?>
-                    <div id="topstory-img"><img src="/sites/all/themes/block49/tmp/180x135.gif" width="180" height="135" alt="" /></div>
-                    
-                    <div id="topstory-desc">
-						
-                        <h2><a href="#">Lorem ipsum dolor sit amet</a></h2>
-                        <p class="info">Published: <strong>16.7.2008</strong> by: <strong><a href="#">John Doe</a></strong></p>
-                        <p class="nomb">Lorem ipsum dolor sit amet, consectetuer ad. Duis eros. Nunc imperdiet, lacus quias posule accumsan, elit nunc eleifend augue id uipera enim augue id eros. Etiam justo.</p>
-
-                    </div> <!-- /topstory-desc -->
-                
-                </div> <!-- /topstory -->
-                <?php endif; ?>
+					<div id="topstory-top"></div>
+                		<?php print $topstory ?>
+                	<?php endif; ?>
                 
                 <?php if ($topstory_list): ?>
                 <div id="topstory-list" class="box">
@@ -115,11 +107,7 @@
     <!-- Footer -->
     <div id="footer">
 		<?php print $footer?>
-        <!-- Do you want remove this backlinks? Look at www.nuviotemplates.com/payment.php -->
-        <p class="f-right"><a href="http://www.nuviotemplates.com/">Free web templates</a> by <a href="http://www.nuvio.cz/">Nuvio</a> &ndash; Our tip: <a href="http://last-minute.invia.sk" title="Last Minute">Last Minute</a> <a href="http://wycieczki.invia.pl" title="Wczasy">Wczasy</a></p>
-        <!-- Do you want remove this backlinks? Look at www.nuviotemplates.com/payment.php -->
-
-        <p>Copyright &copy;&nbsp;2008 <strong><a href="#">Your Name</a></strong>, All Rights Reserved &reg;</p>
+        <p>Copyright &copy;&nbsp;2010 <strong><a href="#">Block49</a></strong>, All Rights Reserved &reg;</p>
 
     </div> <!-- /footer -->
 	<?php endif;?>

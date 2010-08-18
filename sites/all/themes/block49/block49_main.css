@@ -309,6 +309,15 @@ body.sidebar-right #topstory-top{
 	
 }
 
+body.sidebar-left #topstory-top{
+	width: 740px;
+    height: 5px;
+    background: url("block49_images/topstory-top-longest.gif") 0 0 no-repeat;
+    font-size: 0;
+    line-height: 0;
+	
+}
+
 body.sidebar-right #topstory-bottom {
     width: 670px;
     height: 5px;
@@ -332,6 +341,11 @@ body.sidebar-right #topstory-bottom {
 #topstory-desc {
     float: right;
     width: 255px;
+}
+
+body.sidebar-left #topstory-desc {
+    float: right;
+    width: 520px;
 }
 
 #topstory-desc h2 {
