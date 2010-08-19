@@ -1,0 +1,4 @@
+;$Id
+name = Legalchat
+description = The backend to a polling jquery web chat client
+core = 6.x

@@ -9,6 +9,7 @@ engine = phptemplate
 stylesheets[screen,projection][] = block49_reset.css
 stylesheets[screen,projection][] = block49_main.css
 stylesheets[screen,projection][] = block49_style.css
+stylesheets[screen,projection][] = block49_chat.css
 stylesheets[print][] = print.css
 
 regions[left]  = Left sidebar

@@ -1,0 +1,77 @@
+<?php
+
+function legalchat_heartbeat(){
+	
+	$data = new stdClass();
+	
+	if (isset($_SESSION['amessage']['mymessage'])){
+		$msgret = new stdClass();
+		$msgret->s = 0;
+		$msgret->f = 'adcocks';
+		$msgret->m = $_SESSION['amessage']['mymessage'] . "?";
+		$items = array();
+		$items[] = $msgret; 
+		$data->items = $items;
+		unset($_SESSION['amessage']['mymessage']);
+		header("Content-type: application/json");
+    	echo drupal_to_js($data);
+    }
+}
+
+function legalchat_sendchat(){
+
+	$_SESSION['amessage']['mymessage'] = $_POST['message'];
+	$msgret = new stdClass();
+	$msgret->user = $user->name;
+	header("Content-type: application/json");
+    echo drupal_to_js($msgret);
+}
+
+
+function legalchat_start(){
+	$itemarray = array();
+ 	$item = new stdClass();
+	$item->s = 0;
+	$item->f = "adcocks";
+	$item->m = "hello there";
+	$itemarray[] = $item;
+
+	$msgret = new stdClass();
+	$msgret->username = 'tlodge';
+	$msgret->items = array();//$itemarray;
+	header("Content-type: application/json");
+    echo drupal_to_js($msgret);
+}
+
+function legalchat_menu(){
+
+ 	global $my_variable;
+ 	
+ 	$my_variable = "socks are nice";
+	$items = array();
+
+	//Link to the test_module admin page:
+	$items['legalchat/heartbeat'] = array(
+		'description' => 'Message heartbeat',
+		'page callback' => 'legalchat_heartbeat',
+		'access arguments' => array(1),
+		'type' => MENU_CALLBACK_ITEM,
+	);
+	
+	$items['legalchat/start'] = array(
+		'description' => 'Start chat session',
+		'page callback' => 'legalchat_start',
+		'access arguments' => array(1),
+		'type' => MENU_CALLBACK_ITEM,
+	);
+	
+	$items['legalchat/sendchat'] = array(
+		'description' => 'get message from client',
+		'page callback' => 'legalchat_sendchat',
+		'access arguments' => array(1),
+		'type' => MENU_CALLBACK_ITEM,
+	);
+	return $items;
+}
+
+
