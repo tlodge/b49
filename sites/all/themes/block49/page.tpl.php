@@ -11,7 +11,7 @@
     <!--[if lt IE 7]>
       <?php print phptemplate_get_ie_styles(); ?>
     <![endif]-->
-   
+    
 </head>
 
 <body<?php print phptemplate_body_class($left, $right); ?>>
@@ -60,7 +60,6 @@
 
                     <p class="nom">
                     	<?php print $topstory_list ?>
-                        <a href="#"><img src="/sites/all/themes/block49/tmp/105x75.gif" width="105" height="75" alt="" /></a><a href="#"><img src="/sites/all/themes/block49/tmp/105x75.gif" width="105" height="75" alt="" /></a><a href="#"><img src="/sites/all/themes/block49/tmp/105x75.gif" width="105" height="75" alt="" /></a><a href="#" class="last"><img src="/sites/all/themes/block49/tmp/105x75.gif" width="105" height="75" alt="" /></a>
                     </p>
 
                 </div> <!-- /topstory-list -->

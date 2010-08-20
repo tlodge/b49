@@ -1,6 +1,11 @@
 <?php
 // $Id: template.php,v 1.16.2.3 2010/05/11 09:41:22 goba Exp $
 
+
+drupal_add_js(drupal_get_path('theme', 'block49') .'/js/jcarousellite_1.0.1.js', 'theme');
+drupal_add_js(drupal_get_path('theme', 'block49') .'/js/carousettings.js', 'theme');
+drupal_add_js(drupal_get_path('theme', 'block49') .'/js/chat.js', 'theme');
+
 /**
  * Sets the body-tag class attribute.
  *
@@ -41,6 +46,8 @@ function phptemplate_breadcrumb($breadcrumb) {
  * Override or insert PHPTemplate variables into the templates.
  */
 function phptemplate_preprocess_page(&$vars) {
+	
+
   $vars['tabs2'] = menu_secondary_local_tasks();
 
   // Hook into color.module
@@ -52,7 +59,7 @@ function phptemplate_preprocess_page(&$vars) {
 /**
  * Add a "Comments" heading above comments except on forum pages.
  */
-function garland_preprocess_comment_wrapper(&$vars) {
+function block49_preprocess_comment_wrapper(&$vars) {
   if ($vars['content'] && $vars['node']->type != 'forum') {
     $vars['content'] = '<h2 class="comments">'. t('Comments') .'</h2>'.  $vars['content'];
   }
