@@ -542,21 +542,30 @@ body.sidebar-left #topstory-desc {
     margin: 0;
 }
 
-
+.carousel{
+	float: left;
+}
+.carousel p {
+margin: 0;
+padding:0;
+}
+/*
 #topstory-list .carousel{
 	height:120px;
     margin:0;
 	padding:0;
-}
+}*/
 
 button.prev{
+	margin-top:30px;
 	float:left;
 	 margin: 0;
 }
 
 button.next{
+	padding-top:30px;
 	float:left;
-	 margin: 0;
+	margin: 0;
 }
 /*
  * Note that this refers to an element with two class names: <li class="leaf first"
