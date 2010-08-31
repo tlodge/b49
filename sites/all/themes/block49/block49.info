@@ -10,6 +10,8 @@ stylesheets[screen,projection][] = block49_reset.css
 stylesheets[screen,projection][] = block49_main.css
 stylesheets[screen,projection][] = block49_style.css
 stylesheets[screen,projection][] = block49_chat.css
+stylesheets[screen,projection][] = block49_carousel.css
+stylesheets[screen,projection][] = block49_twitterclient.css
 stylesheets[print][] = print.css
 
 regions[left]  = Left sidebar

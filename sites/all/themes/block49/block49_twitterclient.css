@@ -1,0 +1,287 @@
+/*body,h1,h2,h3,p,quote,small,form,input,ul,li,ol,label{
+	
+	margin:0px;
+	padding:0px;
+}*/
+
+h2.tut{
+	color:black;
+	font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
+	font-size:16px;
+	padding:12px 0 0 58px;
+	text-transform:uppercase;
+	
+	/*text-shadow:2px 1px 6px #333;*/
+}
+
+#twitter-ticker{
+	margin-left:-20px;
+	width:450px;
+	height:300px;
+	background:url(images/twitterclient/slickbg.png) no-repeat #f5f5f5;
+	color:#666666;
+	display:none;
+	
+	-moz-border-radius:10px 10px 6px 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius:6px;
+
+	text-align:left;
+}
+
+#tweet-container{
+	height:250px;
+	width:auto;
+	overflow:hidden;
+}
+
+#twitIcon{
+	position:absolute;
+	top:-25px;
+	left:-10px;
+	width:64px;
+	height:64px;
+}
+
+#top-bar{
+	height:45px;
+	background:url('images/twitterclient/top_bar.png') repeat-x;
+	border-bottom:1px solid white;
+	position:relative;
+	margin-bottom:8px;
+	
+	-moz-border-radius:6px 6px 0 0;
+}
+
+.tweet{
+	padding:5px;
+	margin:0 8px 8px;
+	
+	border:1px solid #F0F0F0;
+	background: #ffffff url('images/twitterclient/transparent.png');
+	
+	width:auto;
+	overflow:hidden;
+}
+
+.tweet .avatar,
+.tweet .user,
+.tweet .time{
+	float:left;
+}
+
+.tweet .time{
+	text-transform:uppercase;
+	font-size:10px;
+	color:#AAAAAA;
+	white-space:nowrap;
+}
+
+
+.tweet .avatar img{
+	width:36px;
+	height:36px;
+	border:2px solid #eeeeee;
+	margin:0 5px 5px 0;
+}
+
+.tweet .txt{
+	clear:both;
+}
+
+.tweet .user{
+	font-weight:bold;
+}
+/*
+a, a:visited {
+	color:#00BBFF;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+*/
+
+#loading{
+	margin:100px 95px;
+}
+
+/* The styles below are only necessary for the demo page */
+/*
+p{
+	padding-top:7px;
+}*/
+
+#twitter-ticker{
+	margin:0px auto 20px;
+}
+/*
+body{
+	color:white;
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-left:-20px;
+}*/
+
+#twittermain{
+	margin: 0px auto;
+	text-align:center;
+	width:420px;
+}
+
+/*
+h1{
+	color:white;
+	font-size:36px;
+	font-weight:bold;
+	font-family:"Trebuchet MS",Arial, Helvetica, sans-serif;
+}*/
+
+/*
+ * Twitter input
+ */
+
+
+#tweetForm label{
+	font-size:20px;
+	display:block;
+	color:#000000;
+	margin-left: 5px;
+	float:left;
+}
+
+
+.counter{
+	color:#CCCCCC;
+	float:right;
+	font-family:Georgia,serif;
+	font-size:20px;
+	font-weight:bold;
+	display:block;
+	/*height:20px;*/
+	overflow:hidden;
+	margin-right:110px;
+}
+
+#tweetForm textarea{
+	width:300px;
+	height:38px;
+	margin:0px 0 10px 5px;
+	
+	border:1px solid #AAAAAA;
+	padding: 4px 2px;
+		
+	font-family:'Lucida Grande',sans-serif;
+	overflow:auto;
+	font-size:14px;
+	float:left;
+}
+
+.clear{
+	clear:both;
+}
+
+.submitButton{
+	color:#666666;
+	font-size:14px;
+	height:32px;
+	width:60px;
+	
+	-moz-border-radius:6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius:6px;
+	
+	border:1px solid #cccccc;
+	background:url(images/twitterclient/button_bg.gif) repeat-x #f5f5f5;
+	
+	cursor:pointer;
+	float:left;
+	margin-right:30px;
+	margin-left:10px;
+	margin-top:5px;
+}
+
+.submitButton:hover{
+	background-position:bottom;
+	border-color:#dddddd;
+	color:#333333;
+}
+
+.inact,.inact:hover{
+	background:#f5f5f5;
+	border:1px solid #eeeeee;
+	color:#aaaaaa;
+	cursor:auto;
+}
+
+
+
+
+.jScrollPaneContainer {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.jScrollPaneTrack {
+	position: absolute;
+	cursor: pointer;
+	right:4px;
+	top:0;
+	height: 100%;
+	background: #ddd;
+}
+.jScrollPaneDrag {
+	position: absolute;
+	background: #999;
+	cursor: pointer;
+	overflow: hidden;
+}
+.jScrollPaneDragTop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+.jScrollPaneDragBottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+}
+a.jScrollArrowUp {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	text-indent: -2000px;
+	overflow: hidden;
+	/*background-color: #666;*/
+	height: 9px;
+}
+a.jScrollArrowUp:hover {
+	/*background-color: #f60;*/
+}
+
+a.jScrollArrowDown {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	right: 0;
+	text-indent: -2000px;
+	overflow: hidden;
+	/*background-color: #666;*/
+	height: 9px;
+}
+a.jScrollArrowDown:hover {
+	/*background-color: #f60;*/
+}
+a.jScrollActiveArrowButton, a.jScrollActiveArrowButton:hover {
+	/*background-color: #f00;*/
+}

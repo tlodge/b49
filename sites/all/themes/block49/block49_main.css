@@ -131,7 +131,7 @@ body.sidebar-right #cols {
 #content {
     float: right;
     width: 740px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 body.sidebar-right #content {
@@ -329,7 +329,7 @@ body.sidebar-right #topstory-bottom {
 }
 
 #topstory-desc {
-    float: right;
+    float: left;
     width: 255px;
 }
 
@@ -527,46 +527,6 @@ body.sidebar-left #topstory-desc {
     list-style: none;
 }
 
-#topstory-list .carousel ul {
-    margin: 0;
-}
-
-.carousel {
-    float: left;
-}
-
-/*
- #topstory-list .carousel{
- height:120px;
- margin:0;
- padding:0;
- }*/
-
-.carousel p{
-	margin:0;
-}
-.carousel li {
-    background-color: #FFFFFF;
-    margin: 5px;
-	width:125px;
-	height:125px;
-}
-
-button.prev {
-    width: 5px;
-    float: left;
-    margin: 0;
-    margin-top: 50px;
-    margin-right: 5px;
-    text-align: left;
-}
-
-button.next {
-    width: 5px;
-    padding-top: 30px;
-    float: left;
-    margin-top: 50px;
-}
 
 /*
  * Note that this refers to an element with two class names: <li class="leaf first"

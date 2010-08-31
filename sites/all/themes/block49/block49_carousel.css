@@ -1,0 +1,50 @@
+#topstory-list .carousel ul {
+    margin: 0;
+}
+
+.carousel {
+    float: left;
+}
+
+/*
+ #topstory-list .carousel{
+ height:120px;
+ margin:0;
+ padding:0;
+ }*/
+
+
+
+.carousel li {
+    background-color: #FFFFFF;
+    margin: 5px;
+	width:154px;
+	padding:0px 20px 10px 0px;
+	
+	height:110px;
+	background: transparent;
+}
+
+.carousel ul li p{
+	width: 154px;
+	margin:0;
+}
+
+button.prev {
+	border: 0;
+    width: 20px;
+	height:20px;
+    float: left;
+    margin: 50px 30px 0px 0px;
+    text-align: left;
+	background: url("block49_images/left.png") no-repeat;
+}
+
+button.next {
+   border: 0;
+    width: 20px;
+	height:20px;
+    float: left;
+    margin: 50px 20px 0px 0px;
+	background: url("block49_images/right.png") no-repeat;
+}

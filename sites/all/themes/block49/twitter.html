@@ -1,0 +1,31 @@
+<div id="twittermain">
+    <div id="twitter-ticker">
+        <div id="top-bar">
+            <div id="twitIcon">
+                <img src="/sites/all/themes/block49/images/twitterimages/twitter_64.png" width="64" height="64" alt="Twitter icon" />
+            </div><h2 class="tut">My tweets</h2>
+        </div>
+        <div id="tweet-container">
+            <img id="loading" src="/sites/all/themes/block49/images/twitterimages/loading.gif" width="16" height="11" alt="Loading.." />
+        </div>
+        <div id="scroll">
+        </div>
+    </div>
+    <form name="tweetForm" method="post" action="javascript:get(document.getElementById('tweetForm'));" id="tweetForm">
+        <span class="counter">140</span>
+        <label for="inputField">
+            What are you doing?
+        </label>
+        <textarea name="inputField" id="inputField" tabindex="1" rows="2" cols="40">
+        </textarea>
+        <input class="submitButton inact" name="submit" type="submit" value="update" disabled="disabled" />
+		
+		
+		<!--<span class="latest"><strong>Latest: </strong>
+		<span id="lastTweet">
+                <?/*=$lastTweet*/?>
+            </span></span>-->
+        <div class="clear">
+        </div>
+    </form>
+</div>

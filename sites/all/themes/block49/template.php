@@ -5,6 +5,9 @@
 drupal_add_js(drupal_get_path('theme', 'block49') .'/js/jcarousellite_1.0.1.js', 'theme');
 drupal_add_js(drupal_get_path('theme', 'block49') .'/js/carousettings.js', 'theme');
 drupal_add_js(drupal_get_path('theme', 'block49') .'/js/chat.js', 'theme');
+drupal_add_js(drupal_get_path('theme', 'block49') .'/js/jScrollPane/jquery.mousewheel.js', 'theme');
+drupal_add_js(drupal_get_path('theme', 'block49') .'/js/jScrollPane/jScrollPane-1.2.3.min.js', 'theme');
+drupal_add_js(drupal_get_path('theme', 'block49') .'/js/twitterclient.js', 'theme');
 
 /**
  * Sets the body-tag class attribute.

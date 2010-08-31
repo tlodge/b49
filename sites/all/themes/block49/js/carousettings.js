@@ -2,6 +2,7 @@ $(function() {
     $(".carousel").jCarouselLite({
         btnNext: ".next",
         btnPrev: ".prev",
-        visible: 3
+        visible: 2,
+        scroll:2
     });
 });
