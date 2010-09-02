@@ -6,7 +6,7 @@
 
 h2.tut{
 	color:black;
-	padding:2px 0 0 58px;
+	padding:5px 0 0 58px;
 	text-transform:uppercase;
 	/*text-shadow:2px 1px 6px #333;*/
 }
@@ -306,7 +306,6 @@ padding:2px 0px 2px 0px;
 	margin:0 0px 0px;
 	overflow:hidden;
 	padding: 5px 0px 0px 0px;
-	width:620px;
 }
 /* ul list */
 .rrt-inner ul{
@@ -345,8 +344,8 @@ padding:2px 0px 2px 0px;
 }
 /* tweet content */
 .rrt-inner span.rrt-content{
-	height:35px;
-	width:600px;
+	height:80px;
+	width:260px;
 	display:block;
 	line-height:normal;
 }
@@ -357,7 +356,6 @@ padding:2px 0px 2px 0px;
 	font-size:0.764em;
 	margin:1px 0 0;
 	background:#2f2f2f;
-	width:620px;
 	margin-top:0px;
 	padding-top:2px;
 	padding-left:5px;

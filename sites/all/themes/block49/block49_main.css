@@ -657,7 +657,7 @@ ul.menu li a {
     display: inline;
 }
 
-.content li a {
+.content ul.menu li a {
     /*display:inline;*/
     padding: 7px 10px 7px 30px;
 }
