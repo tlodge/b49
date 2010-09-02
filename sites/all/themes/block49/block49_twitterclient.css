@@ -285,3 +285,97 @@ a.jScrollArrowDown:hover {
 a.jScrollActiveArrowButton, a.jScrollActiveArrowButton:hover {
 	/*background-color: #f00;*/
 }
+
+
+
+/* container */
+.related-tweets{ 
+	color:#666666;
+}
+
+#header .related-tweets a{
+	color:#80002B;
+}
+
+#header .related-tweets li a {
+padding:2px 0px 2px 0px;
+}
+
+/* inner div */
+.rrt-inner{
+	background:url("images/twitterclient/transparent.png") repeat scroll 0 0 #FFFFFF;
+	border:1px solid #F0F0F0;
+	margin:0 0px 0px;
+	overflow:hidden;
+	padding: 5px 0px 0px 0px;
+	width:620px;
+}
+/* ul list */
+.rrt-inner ul{
+	float:left;
+	padding:0 0 0 0;
+	margin:0 0 0 0;
+}
+
+.rrt-inner li{
+	float:left;
+	margin:0 0 0 0;
+	list-style-type:none;
+	position:relative;
+}
+/* author img */
+.rrt-inner span.rrt-author-img{
+	display:block;
+	float:left;
+	width:48px;
+	height:48px;
+	margin:0 0 0 0;
+	padding-right:5px;
+	padding-left:5px;
+	left:0;
+	/*position:absolute;*/
+}
+/* author name */
+.rrt-inner strong a{
+	/*margin-right:5px;*/
+}
+
+/* tweet body */
+.rrt-inner span.rrt-body {
+	display:block;
+	/*margin-left:55px;*/
+}
+/* tweet content */
+.rrt-inner span.rrt-content{
+	height:35px;
+	display:block;
+	line-height:normal;
+}
+/* tweet date and source line */
+.rrt-inner span.rrt-meta {
+	color:white;
+	display:block;
+	font-size:0.764em;
+	margin:1px 0 0;
+	background:#000000;
+	width:600px;
+	margin-top:0px;
+}
+.rrt-inner span.rrt-meta a{
+	color:white;
+	text-decoration:none;
+}
+.rrt-inner span.rrt-meta a:hover{
+	text-decoration:underline;
+}
+/* customize date link */
+.rrt-inner a.rrt-date { }
+/* customize source link */
+.rrt-inner a.rrt-source { }
+
+/* customize links */
+.rrt-inner a.rrt-link { }
+/* customize @user links */
+.rrt-inner a.rrt-at { }
+/* customize #hashtags links */
+.rrt-inner a.rrt-hashtag { }

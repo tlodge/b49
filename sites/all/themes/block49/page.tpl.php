@@ -26,9 +26,14 @@
           }
           $site_title = implode(' ', $site_fields);
         ?> 
-        <h1 id="logo"><a href="./" title="[Go to homepage]"><span></span><?php print $site_title?></a></h1>
-        <hr class="noscreen" />          
-
+        <div id="headerleft"><h1 id="logo"><a href="./" title="[Go to homepage]"><span></span><?php print $site_title?></a></h1></div>
+		<?php if($headerright):?>
+		
+		<div id="headerright">
+		<div id="headerright-top"></div> 
+		<?php print $headerright?></div>
+		<?php endif;?>
+		 <hr class="noscreen" />   
     </div> <!-- /header -->
     
     <!-- Tray -->

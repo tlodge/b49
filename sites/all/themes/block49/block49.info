@@ -16,6 +16,7 @@ stylesheets[print][] = print.css
 
 regions[left]  = Left sidebar
 regions[right] = Right sidebar
+regions[headerright] = Header right
 regions[topstory]  		= Top story 
 regions[topstory_list] 	= Top story list
 regions[ads]			= Adverts
