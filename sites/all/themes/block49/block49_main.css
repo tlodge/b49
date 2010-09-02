@@ -35,7 +35,14 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6, p, address, blockquote, table, dl, fieldset {
-    margin: 15px 0;
+    margin: 5px 0;
+}
+
+
+h2 {
+	font-size:110%;
+	text-transform:uppercase;
+	padding-left:5px;
 }
 
 h3 {
@@ -62,12 +69,19 @@ h3 {
 }
 
 #headerright-top {
-	background:url("block49_images/topstory-top.gif") no-repeat scroll 0 0 transparent;
+	background:url("block49_images/topheader.gif") no-repeat scroll 0 0 transparent;
+	font-size:0;
+	height:5px;
+	line-height:0;
+	width:620px;	
+}
+
+#headerright-bottom {
+	background: url("block49_images/bottomheader.gif") no-repeat scroll 0 0 transparent;
 	font-size:0;
 	height:5px;
 	line-height:0;
 	width:620px;
-	
 }
 
 #headerright{
@@ -76,6 +90,7 @@ h3 {
 	float:left;
 	display:block;
 	padding-top:5px;
+	margin-left:15px;
 }
 
 #headerleft{

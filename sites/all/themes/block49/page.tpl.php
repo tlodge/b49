@@ -31,8 +31,11 @@
 		
 		<div id="headerright">
 		<div id="headerright-top"></div> 
-		<?php print $headerright?></div>
+		<?php print $headerright?>
+		<div id="headerright-bottom"></div>
+		</div> 
 		<?php endif;?>
+		
 		 <hr class="noscreen" />   
     </div> <!-- /header -->
     

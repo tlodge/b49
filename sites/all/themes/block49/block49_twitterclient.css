@@ -6,11 +6,8 @@
 
 h2.tut{
 	color:black;
-	font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
-	font-size:16px;
-	padding:12px 0 0 58px;
+	padding:2px 0 0 58px;
 	text-transform:uppercase;
-	
 	/*text-shadow:2px 1px 6px #333;*/
 }
 
@@ -303,8 +300,9 @@ padding:2px 0px 2px 0px;
 
 /* inner div */
 .rrt-inner{
-	background:url("images/twitterclient/transparent.png") repeat scroll 0 0 #FFFFFF;
-	border:1px solid #F0F0F0;
+	/*background:url("images/twitterclient/transparent.png") repeat scroll 0 0 #FFFFFF;*/
+	background: #F1F1EE;
+	/*border:1px solid #F0F0F0;*/
 	margin:0 0px 0px;
 	overflow:hidden;
 	padding: 5px 0px 0px 0px;
@@ -348,6 +346,7 @@ padding:2px 0px 2px 0px;
 /* tweet content */
 .rrt-inner span.rrt-content{
 	height:35px;
+	width:600px;
 	display:block;
 	line-height:normal;
 }
@@ -357,9 +356,19 @@ padding:2px 0px 2px 0px;
 	display:block;
 	font-size:0.764em;
 	margin:1px 0 0;
-	background:#000000;
-	width:600px;
+	background:#2f2f2f;
+	width:620px;
 	margin-top:0px;
+	padding-top:2px;
+	padding-left:5px;
+}
+
+#header span.rrt-source a{
+	color:white;
+}
+
+#header a.rrt-date {
+	color:white;
 }
 .rrt-inner span.rrt-meta a{
 	color:white;
