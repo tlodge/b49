@@ -8,11 +8,11 @@
 			<?php if (!empty($block->subject)): ?>
   				<h2><a href="#"><?php print $block->subject ?></a></h2>
   			<?php endif;?>
-  			<?php if (!empty($block->content)): ?>
+  			
   				
   					<?php print $block->content ?>
   				
-  			<?php endif;?>
+  			
 			
   		</div> <!-- /topstory-desc -->
      </div> <!-- /topstory -->

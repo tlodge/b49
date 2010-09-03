@@ -85,7 +85,7 @@ h3 {
 }
 
 #headerright{
-	width:620px;
+	width:320px;
 	height:100%;
 	float:left;
 	display:block;
@@ -94,7 +94,7 @@ h3 {
 }
 
 #headerleft{
-	width:300px;
+	width:400px;
 	height:100%;
 	float:left;
 	display:block;
@@ -102,8 +102,8 @@ h3 {
 
 #logo {
     position: relative;
-    width: 254px;
-    height: 75px;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     margin: 0 0 0 20px;
     padding: 0;
@@ -354,6 +354,14 @@ body.sidebar-right #topstory-bottom {
     line-height: 0;
 }
 
+body.sidebar-left #topstory-bottom {
+    width: 740px;
+    height: 5px;
+    background: url("block49_images/topstory-bottom-longest.gif") 0 0 no-repeat;
+    font-size: 0;
+    line-height: 0;
+}
+
 #topstory {
     padding: 5px 10px 10px 10px;
 }
@@ -373,8 +381,9 @@ body.sidebar-right #topstory-bottom {
 }
 
 body.sidebar-left #topstory-desc {
-    float: right;
-    width: 520px;
+    float: left;
+    width: 730px;
+	padding: 5px;
 }
 
 #topstory-desc h2 {
@@ -383,13 +392,17 @@ body.sidebar-left #topstory-desc {
     font-weight: normal;
 }
 
+#topstory-desc h2 a{
+	text-decoration: none;
+}
+
 #topstory-desc .info {
     margin: 0;
     font-size: 85%;
 }
 
 #topstory-list {
-    padding: 10px 0 5px 10px;
+    /*padding: 10px 0 5px 10px;*/
     overflow: hidden
 }
 
@@ -401,6 +414,14 @@ body.sidebar-left #topstory-desc {
 
 #topstory-list img.last {
     margin-right: 0;
+}
+
+.topstory-rightbox{
+	float:left;
+	width: 267px;
+	height:120px;
+	background-color:#F1F1EE;
+	padding: 5px 5px 5px 10px;
 }
 
 .article {
